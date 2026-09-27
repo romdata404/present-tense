@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy policy: Present tense</title>
+<meta name="description" content="How the Present tense app and website handle information. No account, no ads, no analytics, no tracking.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#262A55">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&display=swap">
+<style>
+  :root {
+    color-scheme: light dark;
+    --paper: #F3F4F1;
+    --ink: #1D2126;
+    --ink-soft: #4A5159;
+    --raised: #FBFBFA;
+    --rule: rgba(29, 33, 38, 0.14);
+    --shadow: 0 1px 2px rgba(29, 33, 38, 0.06), 0 16px 36px -18px rgba(29, 33, 38, 0.24);
+    /* The hour band: legal pages are late blue. */
+    --band: #262A55;
+    --band-ink: #E9E6F2;
+    --band-ink-soft: #C6C3DC;
+    --serif: "Literata", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    --sans: "Figtree", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --radius-lg: 20px;
+    --radius-sm: 6px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #14162B;
+      --ink: #E9E6F2;
+      --ink-soft: #B3AFC7;
+      --raised: #1D2040;
+      --rule: rgba(233, 230, 242, 0.16);
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 16px 36px -18px rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 1.0625rem; line-height: 1.6; }
+  .wrap { width: 100%; max-width: 70rem; margin-inline: auto; padding-inline: max(1.25rem, env(safe-area-inset-left, 0px)); }
+  @media (min-width: 48rem) { .wrap { padding-inline: 2.5rem; } }
+
+  a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.22em; transition: text-decoration-thickness 150ms ease-out; }
+  a:hover { text-decoration-thickness: 2px; }
+  a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; border-radius: 3px; }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.2; letter-spacing: -0.012em; text-wrap: balance; margin: 0; }
+
+  .skip { position: absolute; left: 1rem; top: -4rem; z-index: 10; padding: 0.5rem 0.875rem; border-radius: var(--radius-sm); background: var(--raised); color: var(--ink); box-shadow: var(--shadow); }
+  .skip:focus { top: 1rem; }
+
+  .band { background: var(--band); color: var(--band-ink); padding-top: env(safe-area-inset-top, 0px); }
+  .site-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.5rem 1.5rem; padding-block: 1.25rem; }
+  .wordmark { font-family: var(--serif); font-weight: 600; font-size: 1.25rem; letter-spacing: -0.01em; text-decoration: none; }
+  .site-nav ul { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; list-style: none; margin: 0; padding: 0; }
+  .site-nav a { text-decoration: none; font-weight: 500; }
+  .site-nav a:hover, .site-nav a[aria-current="page"] { text-decoration: underline; }
+  .site-nav a[aria-current="page"] { text-decoration-thickness: 2px; }
+  .page-title { padding-block: 1.5rem 2.75rem; }
+  @media (min-width: 48rem) { .page-title { padding-block: 2.5rem 3.75rem; } }
+  .page-title h1 { font-size: clamp(2.25rem, 1.6rem + 2.8vw, 3.5rem); }
+  .page-title p { margin: 0.75rem 0 0; color: var(--band-ink-soft); }
+
+  /* Document layout: contents list beside the text on wide screens, above it on phones. */
+  .doc { display: grid; gap: 2rem; padding-block: 2.5rem 0; }
+  @media (min-width: 64rem) { .doc { grid-template-columns: 15rem minmax(0, 1fr); gap: 4rem; padding-block: 3.5rem 0; } }
+  .toc { align-self: start; font-size: 0.9375rem; }
+  @media (min-width: 64rem) { .toc { position: sticky; top: 1.5rem; } }
+  .toc h2 { font-family: var(--sans); font-size: 0.9375rem; font-weight: 600; letter-spacing: 0; }
+  .toc ol { list-style: none; margin: 0.625rem 0 0; padding: 0; display: grid; gap: 0.375rem; }
+  .toc a { color: var(--ink-soft); text-decoration: none; }
+  .toc a:hover { color: var(--ink); text-decoration: underline; }
+  @media (max-width: 63.99rem) {
+    .toc { background: var(--raised); border-radius: var(--radius-lg); box-shadow: var(--shadow); padding: 1.25rem 1.5rem; }
+    .toc ol { grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr)); column-gap: 1.25rem; row-gap: 0.5rem; line-height: 1.35; }
+  }
+
+  .prose { max-width: 68ch; }
+  .prose h2 { font-size: 1.625rem; margin-top: 3rem; scroll-margin-top: 1.5rem; }
+  .prose h3 { font-size: 1.1875rem; margin-top: 1.75rem; }
+  .prose p, .prose ul, .prose ol, .prose .table-scroll { margin: 0.875rem 0 0; }
+  .prose ul, .prose ol { padding-left: 1.25rem; }
+  .prose li + li { margin-top: 0.375rem; }
+  .summary { background: var(--raised); border-radius: var(--radius-lg); box-shadow: var(--shadow); padding: 1.5rem 1.5rem 1.625rem; }
+  @media (min-width: 48rem) { .summary { padding: 2rem 2.25rem; } }
+  .summary h2 { margin-top: 0; font-size: 1.375rem; }
+  .table-scroll { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.9375rem; }
+  th, td { text-align: left; vertical-align: top; padding: 0.625rem 0.75rem 0.625rem 0; border-bottom: 1px solid var(--rule); }
+  th { font-weight: 600; }
+  address { font-style: normal; }
+
+  .site-foot { margin-top: 5rem; padding-block: 2.5rem calc(2.5rem + env(safe-area-inset-bottom, 0px)); border-top: 1px solid var(--rule); font-size: 0.9375rem; color: var(--ink-soft); }
+  .site-foot .wrap { display: grid; gap: 1rem; }
+  .site-foot ul { display: flex; flex-wrap: wrap; gap: 0.25rem 1.5rem; list-style: none; margin: 0; padding: 0; }
+  .site-foot a { color: var(--ink); }
+  .care { max-width: 62ch; color: var(--ink); }
+
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="band">
+  <div class="wrap">
+    <header class="site-head">
+      <a class="wordmark" href="index.html">Present tense</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="privacy.html" aria-current="page">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="page-title">
+      <h1>Privacy policy</h1>
+      <p>Effective September 28, 2026</p>
+    </div>
+  </div>
+</div>
+
+<main id="main" class="wrap doc">
+  <nav class="toc" aria-labelledby="toc-title">
+    <h2 id="toc-title">On this page</h2>
+    <ol>
+      <li><a href="#who">Who we are</a></li>
+      <li><a href="#on-device">What stays on your phone</a></li>
+      <li><a href="#reminders">Reminders</a></li>
+      <li><a href="#sharing">Share cards</a></li>
+      <li><a href="#purchases">Purchases and RevenueCat</a></li>
+      <li><a href="#not-collected">What we don't collect</a></li>
+      <li><a href="#website">This website and email</a></li>
+      <li><a href="#bases">Why we can use it</a></li>
+      <li><a href="#retention">How long we keep it</a></li>
+      <li><a href="#rights">Your rights</a></li>
+      <li><a href="#california">California</a></li>
+      <li><a href="#transfers">International transfers</a></li>
+      <li><a href="#children">Children</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#changes">Changes</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <article class="prose">
+    <section class="summary" aria-labelledby="short-title">
+      <h2 id="short-title">The short version</h2>
+      <ul>
+        <li>Present tense has no account and no sign-in, and we don't run a server of our own.</li>
+        <li>What you put into the app stays on your phone: your quiz answers, first name, favourites, your own affirmations, reminder times and streak. We never receive it.</li>
+        <li>To make subscriptions work, our subscription service, RevenueCat, receives an anonymous ID, your purchase and subscription status, basic device information and your IP address.</li>
+        <li>No ads, no analytics, no tracking, no location, no contacts and no health data. We don't sell or share your personal information.</li>
+        <li>Apple or Google handle payment. We never see your card details.</li>
+      </ul>
+    </section>
+
+    <h2 id="who">Who we are</h2>
+    <p>This policy explains how Mana Pickle LLC, a Hawaii limited liability company ("we", "us"), handles information in the Present tense app and on this website. We decide how the personal information described here is used.</p>
+    <p>You can reach us, including our data protection officer, at <a href="mailto:presenttenseapp@gmail.com">presenttenseapp@gmail.com</a>, or by post:</p>
+    <address>Mana Pickle LLC<br>P.O. Box 4865<br>Kailua-Kona, HI 96745<br>United States</address>
+    <p>We offer Present tense in the United States, Canada, Australia, New Zealand and Singapore. It is not offered in the United Kingdom or the European Economic Area.</p>
+
+    <h2 id="on-device">What stays on your phone</h2>
+    <p>The app stores these things only on your device:</p>
+    <ul>
+      <li>your quiz answers, including the situation and voice you chose</li>
+      <li>the first name you gave the app</li>
+      <li>your favourites</li>
+      <li>affirmations you write yourself</li>
+      <li>your reminder times</li>
+      <li>your daily check-ins and streak</li>
+      <li>when you started and whether your subscription was active the last time the app checked, so the app can open while offline</li>
+    </ul>
+    <p>None of this is sent to us or to anyone else, and we have no way to see it. Deleting the app deletes it from your phone.</p>
+    <p>If your phone backs up app data to your iCloud or Google account, that backup may include this information. Those backups are controlled by you and by Apple or Google, not by us. A copy can stay in an older backup until that backup is replaced or deleted.</p>
+
+    <h2 id="reminders">Reminders</h2>
+    <p>The app schedules reminders on your device using your phone's own notification system. They are not sent from a server, and we don't receive your reminder times or a push notification token. You can turn notifications off at any time in your phone's settings.</p>
+
+    <h2 id="sharing">Share cards</h2>
+    <p>When you share a card, the image is made on your device and handed to the app you pick in your phone's share sheet. We don't receive a copy. What happens after that is covered by the privacy policy of the app you shared to.</p>
+
+    <h2 id="purchases">Purchases and RevenueCat</h2>
+    <p>When you start a free trial or buy a subscription, Apple (App Store) or Google (Google Play) handles the payment under their own terms and privacy policies. We don't receive your name, email address or payment details from them.</p>
+    <p>We use RevenueCat, Inc., a company in the United States, to check whether you have an active subscription and to unlock the features you paid for. When the app connects to RevenueCat, RevenueCat receives:</p>
+    <ul>
+      <li><strong>An anonymous app user ID.</strong> This is a random identifier the app creates on your device. We don't link it to your name, your email address or your Apple or Google account.</li>
+      <li><strong>Purchase and subscription information.</strong> The store's receipt or purchase token, which plan you bought, when your subscription or trial started and when it renews or ends, and when the app last checked in.</li>
+      <li><strong>Device information.</strong> Such as your device type and operating system version.</li>
+      <li><strong>Your IP address.</strong> RevenueCat receives it whenever the app connects, as any internet service does.</li>
+    </ul>
+    <p>We use this information to unlock paid features and restore them if you reinstall the app, to handle trials, renewals, cancellations and refunds, to prevent fraud, and to see totals such as how many trials become subscriptions. We don't use it for advertising, and we don't combine it with information from other sources.</p>
+    <p>RevenueCat handles this information for us as our service provider, under a data processing agreement that limits its use to providing the service to us and says it will not sell or share it. We require RevenueCat to protect this information to the same standard as this policy. RevenueCat stores data in the United States.</p>
+    <p>If you rate or review the app, or contact Apple or Google about a purchase, that is handled by Apple or Google under their own privacy policies.</p>
+
+    <h2 id="not-collected">What we don't collect</h2>
+    <p>The app has no analytics or crash reporting tools, shows no ads and doesn't use advertising identifiers. We don't collect your location, contacts, photos, health information or email address through the app. We don't track you across other companies' apps or websites, and we don't sell or share your personal information, as California law defines those terms.</p>
+
+    <h2 id="website">This website and email</h2>
+    <p>This website is a set of static pages. It sets no cookies and runs no analytics. It loads its typefaces from Google Fonts, so your browser sends your IP address and basic browser information to Google when a page loads, which Google's privacy policy covers. The company that hosts the website may keep standard server logs, such as IP addresses and the pages requested, to run and secure the site.</p>
+    <p>If you email us, we receive your email address and whatever you write. We use it only to answer you and to keep a record of your request.</p>
+
+    <h2 id="bases">Why we can use this information</h2>
+    <p>Why we use each kind of information:</p>
+    <ul>
+      <li><strong>Providing your subscription</strong> (checking your status, restoring purchases, handling trials and renewals): this is necessary for our contract with you.</li>
+      <li><strong>Preventing fraud and seeing subscription totals:</strong> our legitimate interest in running a paid app safely and knowing whether it pays for itself. We keep this to an anonymous ID and purchase records.</li>
+      <li><strong>Answering your emails:</strong> our legitimate interest in helping you.</li>
+      <li><strong>Keeping records the law requires</strong>, such as for tax and accounting: our legal obligation.</li>
+    </ul>
+    <p>We don't make decisions about you based solely on automated processing.</p>
+
+    <h2 id="retention">How long we keep it</h2>
+    <ul>
+      <li><strong>Information on your phone:</strong> until you delete it or delete the app.</li>
+      <li><strong>RevenueCat records:</strong> for as long as we need them to provide and support your subscription and to meet tax, accounting and legal obligations. After that we delete them. You can ask us to delete them sooner.</li>
+      <li><strong>Emails:</strong> for as long as we need them to deal with your request and any follow-up.</li>
+    </ul>
+
+    <h2 id="rights">Your rights and choices</h2>
+    <p>Wherever you live, you can ask us what personal information we hold about you, ask for a copy, and ask us to correct or delete it. Email <a href="mailto:presenttenseapp@gmail.com">presenttenseapp@gmail.com</a>.</p>
+    <p>Because we don't know who you are, we need a way to find your record. Please include the Support ID shown in the app under Settings, then Subscription. If you no longer have the app, include the order number from your purchase receipt instead: on Apple, the order ID in your purchase history at reportaproblem.apple.com or in your receipt email; on Google Play, the order number that starts with "GPA" in your order history or receipt email. We use it only to find your record and act on your request.</p>
+    <p>Deleting our RevenueCat record doesn't cancel your subscription. To stop being charged, cancel through Apple or Google (see the <a href="support.html">support page</a>). If you keep using the app, a new anonymous record is created the next time the app checks your subscription.</p>
+    <p>You can turn off notifications at any time in your phone's settings, and you can delete everything the app stores on your phone by deleting the app.</p>
+    <h3>If you are in Canada, Australia, New Zealand or Singapore</h3>
+    <p>Contact us at the address above with any question or complaint about your personal information. If you're not satisfied with our answer, you can contact the privacy regulator where you live.</p>
+
+    <h2 id="california">If you are a California resident</h2>
+    <p>You have the right to know what personal information we collect, use and disclose, to delete it, to correct it, and to opt out of its sale or sharing. We don't sell or share personal information, and we haven't done so in the last 12 months. We don't collect sensitive personal information. We won't treat you differently for using your rights. You can make a request by email, and an authorised agent can make one for you with your signed permission. We verify requests by matching the order number described above.</p>
+    <p>In the last 12 months we have collected these categories of personal information, all from the app through RevenueCat, for the purposes described in <a href="#purchases">Purchases and RevenueCat</a>:</p>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th scope="col">Category</th><th scope="col">What it is</th><th scope="col">Disclosed to</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Identifiers</td><td>Anonymous app user ID, IP address</td><td>RevenueCat, as our service provider</td></tr>
+          <tr><td>Commercial information</td><td>Purchase and subscription records</td><td>RevenueCat, as our service provider</td></tr>
+          <tr><td>Internet or other electronic network activity</td><td>Device type and operating system version sent with each connection</td><td>RevenueCat, as our service provider</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>If you email us, we also receive your email address and the contents of your message, which we use only to reply.</p>
+
+    <h2 id="transfers">International transfers</h2>
+    <p>We are based in the United States, and RevenueCat processes information in the United States. If you live elsewhere, your information is transferred to the United States under RevenueCat's data processing agreement.</p>
+
+    <h2 id="children">Children</h2>
+    <p>Present tense is made for adults and is not directed to children under 13. We don't knowingly collect personal information from children under 13. If you believe a child under 13 has bought a subscription, contact us and we will delete the matching RevenueCat record.</p>
+
+    <h2 id="security">Security</h2>
+    <p>Information on your phone is protected by your phone's own security, such as your passcode. Information sent to RevenueCat travels over encrypted connections. No method of storage or transmission is completely secure, which is one reason we keep what leaves your phone to the minimum described here.</p>
+
+    <h2 id="changes">Changes to this policy</h2>
+    <p>If we change this policy, we'll update the effective date at the top. If a change affects what we collect or how we use it, we'll also say so in the app's update notes before the change takes effect.</p>
+
+    <h2 id="contact">Contact</h2>
+    <p>Email <a href="mailto:presenttenseapp@gmail.com">presenttenseapp@gmail.com</a> or write to:</p>
+    <address>Mana Pickle LLC<br>P.O. Box 4865<br>Kailua-Kona, HI 96745<br>United States</address>
+  </article>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p class="care">Present tense is a wellness app, not medical advice, therapy or treatment. If you are in crisis in the US, call or text 988. Elsewhere, contact your local emergency services.</p>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="terms.html">Terms of use</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="mailto:presenttenseapp@gmail.com">presenttenseapp@gmail.com</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 Mana Pickle LLC</p>
+  </div>
+</footer>
+</body>
+</html>
